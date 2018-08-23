@@ -18,19 +18,19 @@ Both the Gaussian distribution and the Dirichlet distribution have a special pro
 The marginalisation property of the Gaussian makes marginalising out a variable of a Gaussian distribution easy. It works as follows. We have a distribution over five dimensions. Our mean vector has five entries and our covariance matrix is a five by five matrix. Now marginalising out the fourth variable amounts to discarding the fourth entry in the mean vector and the fourth row and column in the covariance matrix. The resulting mean vector and covariance matrix again parametrize a Gaussian.
 
 The figure below shows this visually.
-![draw_gauss]()
+![draw_gauss](https://github.com/RobRomijnders/awesome_distributions/blob/master/im/draw_gauss.png?raw=true)
 
 The code in `non_parametrics_gaussian.py` shows some small experiment to play with this property. This code produces the diagram below.
-![awesome_gauss]()
+![awesome_gauss](https://github.com/RobRomijnders/awesome_distributions/blob/master/im/awesome_gaussian.png?raw=true)
 
 ## Aggregation property of the Dirichlet
 The aggregation property of the Dirichlet makes aggregating two dimensions of a Dirichlet easy. It works as follows. We have a distribution over five dimensions. Our alpha vector has five entries. Now aggregating the third and the fourth variable amounts to adding their alphas together. The resulting alphas again parametrize a Dirichlet.
 
 The figure below shows this visually.
-![draw_diri]()
+![draw_diri](https://github.com/RobRomijnders/awesome_distributions/blob/master/im/draw_dir.png?raw=true)
 
 The code in `non_parametrics_dirichlet.py` shows some small experiment to play with this property. This code produces the diagram below.
-![awesome_diri]()
+![awesome_diri](https://github.com/RobRomijnders/awesome_distributions/blob/master/im/awesome_dirchlet.png?raw=true)
 
 Honestly, I am new to Bayesian non parametrics. These scribbles show my initial thoughts. I would be happy to hear from further insights, help or extensions!
 
